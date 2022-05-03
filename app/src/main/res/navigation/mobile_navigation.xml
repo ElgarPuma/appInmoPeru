@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.upc.inmoperu.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.upc.inmoperu.ui.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+
+    <fragment
+        android:id="@+id/navigation_wish"
+        android:name="com.upc.inmoperu.ui.wish.WishFragment"
+        android:label="@string/title_wish"
+        tools:layout="@layout/fragment_wish" />
+    <fragment
+        android:id="@+id/navigation_contact"
+        android:name="com.upc.inmoperu.ui.contact.ContactFragment"
+        android:label="@string/title_contact"
+        tools:layout="@layout/fragment_contact" />
+    <fragment
+        android:id="@+id/navigation_new"
+        android:name="com.upc.inmoperu.ui.news.NewsFragment"
+        android:label="@string/title_noticia"
+        tools:layout="@layout/fragment_news" />
+</navigation>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_inmo_store"
+    tools:context=".ui.wish.WishFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/background_inmo_store"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/searchview_top"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView   android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorGray"
+                        android:gravity="left"
+                        android:text="Total:"
+                        android:textSize="24dp"></TextView>
+            <TextView   android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:gravity="left"
+                android:id="@+id/text_precio"
+                android:textSize="24dp"></TextView>
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="35dp"
+                android:text="Procesar Solicitud"
+                android:background="@drawable/button_first_bg"
+                android:textColor="@color/colorGray"
+                android:id="@+id/procesar_compra"></Button>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="57dp"
+        android:layout_marginBottom="57dp"
+        android:id="@+id/rvListItemsWish"
+        android:scrollbars="vertical" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/background_inmo_store"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/searchview"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:text="Solicitud"
+                android:textSize="24dp">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo_inmo" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</FrameLayout>

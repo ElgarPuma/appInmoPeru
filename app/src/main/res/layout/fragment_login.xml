@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_inmo_store"
+    tools:context=".ui.account.LoginFragment">
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="100dp"
+        android:layout_height="79dp"
+        android:src="@drawable/logo_inmo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_registro2"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="336dp"
+        android:background="@drawable/button_first_bg"
+        android:text="@string/title_ingresar"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lnk_olvidaste_contrasena"
+        android:layout_width="195dp"
+        android:layout_height="20dp"
+        android:background="@null"
+        android:layout_marginTop="6dp"
+        android:text="@string/title_olvidaste_contrasena"
+        android:textColor="@color/Description"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.192" />
+
+    <EditText
+        android:id="@+id/txt_contrasena_login"
+        android:layout_width="346dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/custom_edit_txt"
+        android:ems="10"
+        android:hint="@string/title_contraseña"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColorHint="#60000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_email_login"
+        android:layout_width="346dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/custom_edit_txt"
+        android:ems="10"
+        android:hint="@string/title_email"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColorHint="#60000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_ingresar"
+        android:textColor="@color/Description"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Button
+        android:id="@+id/btn_return_login"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_return_left"
+        android:gravity="right"
+        android:pointerIcon="wait"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
